@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>ჩემი პროექტები</title>
+    <style>
+        /* აქ გამოიყენე იგივე CSS, რაც წინა კოდში მოგეცი, რომ დიზაინი ერთიანი იყოს */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        nav { background: #2d3436; padding: 20px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        .content { padding: 50px; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px; }
+        .project-card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; background: white; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">მთავარი</a>
+        <a href="about.html">ჩემს შესახებ</a>
+        <a href="projects.html">პროექტები</a>
+        <a href="contact.html">კონტაქტი</a>
+    </nav>
+    <div class="content">
+        <h1>ჩემი ნამუშევრები</h1>
+        <div class="grid">
+            <div class="project-card"><h3>საიტი 1</h3><p>აღწერა...</p></div>
+            <div class="project-card"><h3>საიტი 2</h3><p>აღწერა...</p></div>
+            <div class="project-card"><h3>საიტი 3</h3><p>აღწერა...</p></div>
+        </div>
+    </div>
+</body>
+</html>
