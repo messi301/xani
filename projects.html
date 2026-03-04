@@ -2,30 +2,42 @@
 <html lang="ka">
 <head>
     <meta charset="UTF-8">
-    <title>ჩემი პროექტები</title>
+    <title>ჩემი პოსტები</title>
     <style>
-        /* აქ გამოიყენე იგივე CSS, რაც წინა კოდში მოგეცი, რომ დიზაინი ერთიანი იყოს */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        nav { background: #2d3436; padding: 20px; text-align: center; }
-        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
-        .content { padding: 50px; text-align: center; }
-        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px; }
-        .project-card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; background: white; }
+        body { font-family: sans-serif; background: #f0f2f5; margin: 0; }
+        nav { background: #333; padding: 15px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; }
+        
+        .container { max-width: 800px; margin: 40px auto; padding: 20px; }
+        
+        /* პოსტის სტილი */
+        .post { background: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .category { display: inline-block; background: #007bff; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; margin-bottom: 10px; }
+        .post h2 { margin: 10px 0; color: #1c1e21; }
+        .post p { color: #4b4f56; line-height: 1.6; }
+        .post-date { font-size: 0.8rem; color: #888; margin-top: 15px; }
     </style>
 </head>
 <body>
     <nav>
         <a href="index.html">მთავარი</a>
+        <a href="projects.html">პოსტები</a>
         <a href="about.html">ჩემს შესახებ</a>
-        <a href="projects.html">პროექტები</a>
-        <a href="contact.html">კონტაქტი</a>
     </nav>
-    <div class="content">
-        <h1>ჩემი ნამუშევრები</h1>
-        <div class="grid">
-            <div class="project-card"><h3>საიტი 1</h3><p>აღწერა...</p></div>
-            <div class="project-card"><h3>საიტი 2</h3><p>აღწერა...</p></div>
-            <div class="project-card"><h3>საიტი 3</h3><p>აღწერა...</p></div>
+
+    <div class="container">
+        <div class="post">
+            <span class="category">ტექნოლოგიები</span>
+            <h2>როგორ შევქმნათ საიტი GitHub-ზე</h2>
+            <p>დღეს ვისწავლე, როგორ გავუშვა ვებსაიტი სრულიად უფასოდ GitHub Pages-ის გამოყენებით...</p>
+            <div class="post-date">გამოქვეყნებულია: 4 მარტი, 2026</div>
+        </div>
+
+        <div class="post">
+            <span class="category">მოგზაურობა</span>
+            <h2>ჩემი შთაბეჭდილებები</h2>
+            <p>აქ შეგიძლიათ დაწეროთ ნებისმიერი სხვა პოსტი, რომელსაც მოისურვებთ.</p>
+            <div class="post-date">გამოქვეყნებულია: 3 მარტი, 2026</div>
         </div>
     </div>
 </body>
